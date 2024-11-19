@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна 3 flexbox- and gridless</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .wrapper {
+        border-collapse: collapse;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+      }
+
+      .header {
+        background-color: lightblue;
+        min-height: 25%;
+        width: 100%;
+      }
+
+      .tasks-cell {
+        width: 75%;
+        height: 100%;
+      }
+
+      .tasks {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .tasks-list {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+      }
+
+      .motto-cell {
+        width: 25%;
+        height: 100%;
+      }
+
+      .motto {
+        width: 70%;
+        min-height: 70%;
+        background-color: white;
+        margin: 3%;
+      }
+
+      .content {
+        min-height: 75%;
+        width: 100%;
+      }
+
+      .content-table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+      }
+
+      .main-content-row {
+        min-height: 50%;
+        width: 66%;
+      }
+
+      .main-content-cell {
+        width: 100%;
+        height: 100%;
+      }
+
+      .menu {
+        width: 34%;
+        height: 100%;
+      }
+
+      .side-menu {
+        height: 50%;
+        width: 100%;
+        background-color: lightsalmon;
+      }
+
+      .sidebar-widget {
+        height: 50%;
+        width: 100%;
+        background-color: lightgreen;
+      }
+
+      .main-content {
+        width: 50%;
+        min-height: 50%;
+        background-color: white;
+      }
+
+      .right-sidebar-cell {
+        height: 100%;
+        width: 25%;
+      }
+
+      .right-sidebar {
+        height: 100%;
+        width: 100%;
+        background-color: lightsalmon;
+      }
+
+      .footer-row {
+        width: 100%;
+        min-height: 33%;
+        background-color: lightblue;
+      }
+
+      .outro-cell {
+        width: 25%;
+        height: 50%;
+      }
+
+      .outro {
+        height: 100%;
+        width: 100%;
+        margin: 3%;
+        background-color: white;
+      }
+
+      .footer-cell {
+        height: 100%;
+        width: 75%;
+        margin: 3%;
+      }
+
+      .footer {
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+      }
+
+      .words {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="wrapper">
+      <tr align="center" class="header">
+        <td class="tasks-cell">
+          <div class="tasks">
+            <ul class="tasks-list">
+              <li>
+                <a href="index.html">main page</a>
+              </li>
+              <li>
+                <a href="megaphoneTelephone.html">mobile version</a>
+              </li>
+              <li>
+                <a href="golub.html">POSHTA</a>
+              </li>
+            </ul>
+          </div>
+        </td>
+        <td class="motto-cell">
+          <div class="motto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            placeat suscipit co
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="content">
+          <table class="content-table">
+            <tr class="main-content-row">
+              <td class="menu">
+                <div class="side-menu">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  atque sit voluptates laborum pariatur officiis blanditiis ea
+                  totam sint eos perferendis perspiciatis magnam praesentium,
+                  possimus non. Sunt porro quod officiis.
+                </div>
+                <div class="sidebar-widget">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum, minima iste ad nam doloremque voluptate adipisci
+                  temporibus saepe repellat eligendi exercitationem vitae
+                  voluptatibus maiores dolores quas non laborum harum
+                  architecto.
+                </div>
+              </td>
+              <td class="main-content-cell">
+                <div class="main-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  sunt aperiam velit atque aspernatur dolor numquam blanditiis
+                  enim quis, est quaerat ab, facere, odio eum aliquam
+                  repudiandae. Maiores, facere aut.
+                </div>
+              </td>
+            </tr>
+            <tr align="center" class="footer-row">
+              <td class="outro-cell">
+                <div class="outro">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat fuga deserunt, voluptatibus eligendi, ratione, ab
+                  perferendis ipsa necessitatibus minima tempore quis accusamus.
+                  Totam odit unde esse quia incidunt nulla repellendus.
+                </div>
+              </td>
+              <td class="footer-cell">
+                <div class="footer">
+                  <q class="words">
+                    The ability to play chess is the sign of a gentleman. The
+                    ability to play chess well is the sign of a wasted life.
+                  </q>
+                  <br />
+                  - Paul Morphy
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="right-sidebar-cell">
+          <div class="right-sidebar">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            qui ex corporis quo optio odio consequatur sapiente obcaecati sed,
+            repellat consequuntur quas delectus ipsum eum fuga quisquam nemo
+            dicta exercitationem!
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
